@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("dockertesting2020/dot_net_code")
+        app = docker.build("dockertesting2020/node_code4-testing")
     }
 
     stage('Test image') {
