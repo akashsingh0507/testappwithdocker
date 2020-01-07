@@ -30,4 +30,8 @@ node {
             } 
                 echo "Trying to Push Docker Build to DockerHub"
     }
+	stage('Run  Container on Dev Server') {
+		sh 'docker run -p 8000:800 -d -name my-app image_name'
+	}
+    
 }
