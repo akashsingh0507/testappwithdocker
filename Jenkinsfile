@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("sample_rohitpipe")
+        app = docker.build("dockertesting2020/dot_net_code")
     }
 
     stage('Test image') {
